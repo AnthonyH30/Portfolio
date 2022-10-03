@@ -1,0 +1,32 @@
+@import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
+
+.sidebar{
+    background-color: $bg-color;
+    flex: 1 1 0;
+    border-radius: $container-border-radius;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding: 3rem 0;
+
+    img{
+        max-width: 70%;
+        border-radius: $container-border-radius;
+    }
+
+    .title{
+        color: $text-color-secondary;
+        background-color: $bg-color-secondary;
+        border-radius: $card-border-radius;
+        margin-top: 4rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .btn{
+        @include btn
+    }
+}

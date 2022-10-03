@@ -1,0 +1,41 @@
+@import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
+
+.main-content{
+    background-color: $bg-color;
+    flex: 2 1 0;
+    border-radius: $container-border-radius;
+    padding: 3rem;
+
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    h2{
+        color: $text-color;
+        font-size: 2.2rem;
+        margin-bottom: 1.3rem;
+        @include center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    h2::after{
+        @include gradient-border;
+    }
+
+    p{
+        color: $text-color-secondary;
+        margin-bottom: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .btn{
+        @include btn;
+        align-self: start;
+    }
+}

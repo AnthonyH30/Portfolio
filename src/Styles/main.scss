@@ -1,0 +1,16 @@
+@import 'variables.scss';
+    
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $font-stack;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $body-bg-color;
+}
+
+a,svg{
+    transition: 0.4s;
+}
