@@ -1,0 +1,28 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+.container{
+    @include center;
+    background-color: $bg-color;
+    position: relative;
+
+    button{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        @include btn;
+        border: none;
+        border-radius: $card-border-radius;
+        cursor: pointer;
+
+        &:hover{
+            background: $gradient-hover;
+        }
+    }
+
+    img{
+        width: 90%;
+        max-width: 600px;
+        min-height: 100vh;
+    }
+}

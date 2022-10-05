@@ -1,9 +1,108 @@
 @import '../../Styles/variables.scss';
 @import '../../Styles/mixins.scss';
+@import '../../Styles/breakpoints.scss';
 
 .projects-cards{
     background-color: $bg-color;
     flex: 2 1 0;
     border-radius: $container-border-radius;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    column-gap: 4rem;
+    row-gap: 2rem;
     padding: 3rem;
+
+@include media('<=phone'){
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(221,36,118,1);
+        border-radius: $card-border-radius;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+        }
+
+        .info{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-inline: 5%;
+            margin-block: 20px;
+            align-items: center;
+
+            h3{
+                color: $text-color;
+            }
+            
+            .btn{
+                @include btn;
+                border-radius: $card-border-radius;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+
+                &:hover{
+                    background: $gradient-hover;
+                }
+            }
+        }
+    }
+
+}
+.outside-modal{
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    @include center;
+}
+
+.modal-content{
+    width: 90%;
+    max-width: 600px;
+    background-color: $bg-color-secondary;
+    border-radius: $card-border-radius;
+
+    .content{
+        width: 100%;
+        padding: 25px;
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+
+        .btns{
+            width: 100%;
+            margin-top: 20px;
+            @include center;
+            justify-content: space-between;
+            padding-inline: 3%;
+
+            a{
+                @include btn;
+                border-radius: $card-border-radius;
+            }
+        }
+
+        .close-btn{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            color: white;
+            cursor: pointer;
+        }
+    }
 }

@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     padding: 2rem;
     gap: 3rem;
+    position: relative;
     
     h2{
         width: 100%;
@@ -17,6 +18,18 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    .back-btn{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: bold;
+        cursor: pointer;
     }
 
 @include media('<=tablet'){

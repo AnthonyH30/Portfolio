@@ -1,5 +1,6 @@
 @import '../../Styles/variables.scss';
 @import '../../Styles/mixins.scss';
+@import '../../Styles/breakpoints.scss';
 
 .main-content{
     background-color: $bg-color;
@@ -37,5 +38,11 @@
     .btn{
         @include btn;
         align-self: start;
+    }
+
+    @include media('<=phone'){
+        .title{
+            font-size: 20px;
+        }
     }
 }

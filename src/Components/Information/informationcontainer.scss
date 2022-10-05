@@ -1,5 +1,6 @@
 @import '../../Styles/variables.scss';
 @import '../../Styles/mixins.scss';
+@import '../../Styles/breakpoints.scss';
 
 #information{
     @include center;
@@ -10,6 +11,24 @@
     text-align: left;
     width: 80%;
     border-radius: $card-border-radius;
+
+@include media('<=desktop'){
+    #email{
+        font-size: 8px;
+    }
+}
+
+@include media('<=tablet'){
+    #email{
+        font-size: 12px;
+    }
+}
+
+@include media('<=phone'){
+    #email{
+        font-size: 8px;
+    }
+}
 
     .info-card{
         @include center;
@@ -30,9 +49,6 @@
         p{
             color: $text-color;
             font-weight: bold;
-        }
-
-        p:nth-child(2){
             font-size: 12px;
         }
 
@@ -54,7 +70,7 @@
 
         #pin-icon{
             color: #c17ceb;
-        }
+        }  
 
 }
     

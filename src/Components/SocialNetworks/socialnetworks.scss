@@ -14,6 +14,7 @@
         border-radius: $card-border-radius;
         color: #333;
         font-size: 1.3rem;
+        transition: all ease-in 0.3s;
         @include center;
     }
 
