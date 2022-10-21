@@ -13,7 +13,7 @@ function Sidebar() {
         <p className='title'>Desenvolvedor Front End</p>
         <SocialNetworks />
         <InformationContainer />
-        <a href="#" className='btn'>Baixar Currículo <BsCloudArrowDownFill /></a>
+        <a href="../../public/curriculo-AnthonyHarisson.pdf" download className='btn'>Baixar Currículo <BsCloudArrowDownFill /></a>
     </aside>
   )
 }

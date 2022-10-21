@@ -1,5 +1,6 @@
 import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiSass} from 'react-icons/di'
-import {SiTailwindcss, SiStyledcomponents} from 'react-icons/si'
+import {SiTailwindcss, SiStyledcomponents, SiTypescript} from 'react-icons/si'
+import { TbBrandReactNative } from 'react-icons/tb'
 import './technologiescontainer.scss'
 
 function TechnologiesContainer() {
@@ -11,7 +12,9 @@ function TechnologiesContainer() {
     { id: "sass", name: "Sass", icon: <DiSass /> },
     { id: "tailwind", name: "TailWind", icon: <SiTailwindcss /> },
     { id: "styled", name: "Styled-Components", icon: <SiStyledcomponents /> },
-    { id: "react", name: "React", icon: <DiReact /> },
+    { id: "TypeScript", name: "TypeScript", icon: <SiTypescript /> },
+    { id: "react", name: "React Native", icon: <TbBrandReactNative /> },
+    { id: "react", name: "React", icon: <DiReact /> }
   ];
 
   return (

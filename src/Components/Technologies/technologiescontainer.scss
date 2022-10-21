@@ -79,6 +79,12 @@
                 color: #dbb39d;
             }
         }
+
+        #TypeScript{
+            svg{
+                color: #3178c6;
+            }
+        }
     }
 
     @include media('<=phone'){

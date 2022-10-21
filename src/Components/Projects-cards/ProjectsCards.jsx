@@ -28,8 +28,8 @@ function ProjectsCards() {
           <AiFillCloseCircle className='close-btn' onClick={closeModal} />
           <img src={item.img} alt={item.name} />
           <div className='btns'>
-            <a href='#'>Repositorio</a>
-            <a href='#'>Projeto</a>
+            <a target="_blank" href={item.linkrepo}>Código</a>
+            <a target="_blank" href={item.linkdemo}>Demo</a>
           </div>
         </div>))}
       </Modal>

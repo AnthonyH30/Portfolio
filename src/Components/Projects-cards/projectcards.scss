@@ -39,14 +39,22 @@
 
             h3{
                 color: $text-color;
+                @include media('<=big-phone'){
+                    font-size: 13px;
+                }
             }
             
             .btn{
                 @include btn;
                 border-radius: $card-border-radius;
                 border: none;
+                font-size: 13px;
                 cursor: pointer;
                 font-weight: bold;
+                @include media('<=big-phone'){
+                    font-size: 8px;
+                    padding: 0.5rem 0.6rem;
+                }
 
                 &:hover{
                     background: $gradient-hover;

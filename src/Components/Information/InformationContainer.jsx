@@ -23,7 +23,7 @@ function InformationContainer() {
         <AiFillEnvironment id='pin-icon' />
         <div>
           <h3>Localização</h3>
-          <p>Magé, Rj</p>
+          <p>Magé, RJ</p>
         </div>
       </div>
     </section>
