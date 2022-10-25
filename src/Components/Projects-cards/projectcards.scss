@@ -6,15 +6,16 @@
     background-color: $bg-color;
     flex: 2 1 0;
     border-radius: $container-border-radius;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    column-gap: 4rem;
-    row-gap: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    // column-gap: 4rem;
+    // row-gap: 2rem;
     padding: 3rem;
-
-@include media('<=phone'){
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-}
 
     .card{
         display: flex;
@@ -24,6 +25,20 @@
         border: 1px solid rgba(221,36,118,1);
         border-radius: $card-border-radius;
         overflow: hidden;
+        width: 20%;
+        min-width: 270px;
+        max-height: fit-content;
+        @include media('<=tablet'){
+            width: 90%;
+        }
+
+        @include media('<=big-phone'){
+            min-width: 220px;
+        }
+
+        @include media('<=phone'){
+            min-width: 160px;
+        }
 
         img{
             width: 100%;

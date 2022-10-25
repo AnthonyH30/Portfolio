@@ -11,4 +11,4 @@ function ProjectsContainer() {
   )
 }
 
-export default ProjectsContainer
+export default ProjectsContainer;
